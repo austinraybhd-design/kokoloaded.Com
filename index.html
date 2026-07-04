@@ -3,36 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kokoloaded</title>
+  <title>Kokoload</title>
 
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
       background: #111;
-      color: white;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
 
     header {
-      background: black;
+      background: #ff4d00;
       padding: 15px;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 10px;
-      color: #00c9ff;
-      text-decoration: none;
+      font-size: 24px;
       font-weight: bold;
     }
 
-    nav a:hover {
-      color: #92fe9d;
+    .container {
+      padding: 20px;
     }
 
-    section {
+    .card {
+      background: #222;
+      margin: 15px auto;
       padding: 20px;
-      text-align: center;
+      border-radius: 10px;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    button {
+      background: #ff4d00;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff7700;
     }
   </style>
 </head>
@@ -40,19 +57,36 @@
 <body>
 
 <header>
-  <h1>Kokoloaded 🎧</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Music</a>
-    <a href="#">Movies</a>
-    <a href="#">Comedy</a>
-  </nav>
+  🚀 Kokoload
 </header>
 
-<section>
-  <h2>Welcome to Kokoloaded</h2>
-  <p>Your hub for music, movies, comedy and more 🔥</p>
-</section>
+<div class="container">
+
+  <div class="card">
+    <h3>🔥 Latest Music</h3>
+    <p>Davido - New Song</p>
+    <a href="https://example.com/music.mp3" target="_blank">
+      <button>Download</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>🎬 Latest Movies</h3>
+    <p>Action Movie 2026</p>
+    <a href="https://example.com/movie" target="_blank">
+      <button>Watch Now</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>😂 Comedy Zone</h3>
+    <p>Funny Skit Episode 1</p>
+    <a href="https://example.com/comedy" target="_blank">
+      <button>Watch</button>
+    </a>
+  </div>
+
+</div>
 
 </body>
 </html>

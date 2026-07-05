@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>KokoLoad</title>
+  <title>KokoLoad</title>
 
-<style>
-body {
-  background: #111;
-  color: white;
-  font-family: Arial;
-  margin: 0;
-}
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: white;
+      font-family: Arial;
+    }
 
-header {
-  background: #ff4d00;
-  padding: 15px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-}
+    header {
+      background: #000;
+      padding: 15px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      border-bottom: 2px solid #ff4d00;
+    }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
 
-.card {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  transition: 0.3s;
-}
+    .card {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
 
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
-}
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
 
-button {
-  background: #ff4d00;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-</style>
+    button {
+      background: #ff4d00;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
 
+    button:hover {
+      background: #ff6600;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>KokoLoad</header>
+<header>KokoLoad 🔥</header>
 
 <div class="container">
 
@@ -64,14 +69,20 @@ button {
   </div>
 
   <div class="card">
-    <h3>🎬 Movies</h3>
-    <p>Action Movie 2026</p>
-    <a href="#"><button>Watch Now</button></a>
+    <h3>🎬 Movie</h3>
+    <p>Fast X</p>
+    <a href="#"><button>Watch</button></a>
   </div>
 
   <div class="card">
-    <h3>😂 Comedy</h3>
-    <p>Funny Skit Episode 1</p>
+    <h3>🎧 Album</h3>
+    <p>Burna Boy - I Told Them</p>
+    <a href="#"><button>Download</button></a>
+  </div>
+
+  <div class="card">
+    <h3>🎥 Series</h3>
+    <p>Money Heist</p>
     <a href="#"><button>Watch</button></a>
   </div>
 

@@ -1,89 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kokoload</title>
+<title>KokoLoad</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+<style>
+body {
+  background: #111;
+  color: white;
+  font-family: Arial;
+  margin: 0;
+}
 
-    header {
-      background: #ff4d00;
-      padding: 15px;
-      font-size: 24px;
-      font-weight: bold;
-    }
+header {
+  background: #ff4d00;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-    .container {
-      padding: 20px;
-    }
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
 
-    .card {
-      background: #222;
-      margin: 15px auto;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 400px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
 
-    h3 {
-      margin-top: 0;
-    }
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
 
-    button {
-      background: #ff4d00;
-      border: none;
-      padding: 10px 20px;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+button {
+  background: #ff4d00;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
 
-    button:hover {
-      background: #ff7700;
-    }
-  </style>
 </head>
 
 <body>
 
-<header>
-  🚀 Kokoload
-</header>
+<header>KokoLoad</header>
 
 <div class="container">
 
   <div class="card">
-    <h3>🔥 Latest Music</h3>
+    <h3>🎵 Music</h3>
     <p>Davido - New Song</p>
-    <a href="https://example.com/music.mp3" target="_blank">
-      <button>Download</button>
-    </a>
+    <a href="#"><button>Download</button></a>
   </div>
 
   <div class="card">
-    <h3>🎬 Latest Movies</h3>
+    <h3>🎬 Movies</h3>
     <p>Action Movie 2026</p>
-    <a href="https://example.com/movie" target="_blank">
-      <button>Watch Now</button>
-    </a>
+    <a href="#"><button>Watch Now</button></a>
   </div>
 
   <div class="card">
-    <h3>😂 Comedy Zone</h3>
+    <h3>😂 Comedy</h3>
     <p>Funny Skit Episode 1</p>
-    <a href="https://example.com/comedy" target="_blank">
-      <button>Watch</button>
-    </a>
+    <a href="#"><button>Watch</button></a>
   </div>
 
 </div>
